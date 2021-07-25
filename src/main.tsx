@@ -7,6 +7,7 @@ import {
   SusPenseList,
   StartTransition,
   UseDeferredValue,
+  UseTransition,
 } from "./routes";
 // legacy 模式，旧模式的同步渲染方式创建模式
 // ReactDom.render(
@@ -40,11 +41,15 @@ ReactDom.createRoot(document.getElementById("root")!).render(
       <li>
         <Link to="/UseDeferredValue">UseDeferredValue</Link>
       </li>
+      <li>
+        <Link to="/UseTransition">UseTransition</Link>
+      </li>
     </ul>
     <Route path="/BatchState" component={BatchState} />
     <Route path="/Suspense" component={Suspense} />
     <Route path="/SusPenseList" component={SusPenseList} />
     <Route path="/StartTransition" component={StartTransition} />
     <Route path="/UseDeferredValue" component={UseDeferredValue} />
+    <Route path="/UseTransition" component={UseTransition} />
   </Router>
 );
